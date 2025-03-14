@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["init_s3_client"],"static":["S3_CLIENT"],"struct":["S3Service"]};

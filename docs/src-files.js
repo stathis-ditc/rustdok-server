@@ -1,0 +1,3 @@
+var srcIndex = new Map(JSON.parse('[["rustdok_server",["",[["api",[["v1",[],["buckets.rs","objects.rs"]]],["config.rs","health.rs","v1.rs"]],["models",[],["s3.rs"]],["rdlib",[["s3",[["bucket",[],["create.rs","delete.rs","list.rs","validate.rs"]],["object",[],["delete.rs","get.rs","list.rs","put.rs","validate.rs"]]],["bucket.rs","error.rs","object.rs","service.rs","types.rs"]]],["s3.rs"]]],["api.rs","main.rs","models.rs","rdlib.rs"]]]]'));
+createSrcSidebar();
+//{"start":36,"fragment_lengths":[401]}

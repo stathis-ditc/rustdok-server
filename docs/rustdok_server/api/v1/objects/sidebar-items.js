@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":["FileExistsQuery","MoveFileRequest","PrefixQuery","check_object_exists_in_bucket","create_folder","delete_object_from_bucket","download_object_from_bucket","list_objects_in_bucket","move_file_in_bucket","upload_object_to_bucket","view_object_from_bucket"]};

@@ -1,0 +1,35 @@
+# Exclude target directory (build artifacts)
+target/
+
+# Exclude version control
+.git/
+.gitignore
+
+# Exclude environment files (these should be passed at runtime)
+.env
+.env.*
+
+# Exclude documentation and other non-essential files
+README.md
+*.md
+*.log
+
+# Exclude test files (but allow empty tests.rs for build)
+tests/
+*_test.rs
+*_tests.rs
+*_spec.rs
+test_*.rs
+tests_*.rs
+spec_*.rs
+
+# Exclude any temporary files
+*.tmp
+*.bak
+*~
+
+# Exclude IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo 
