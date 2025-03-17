@@ -88,6 +88,19 @@ Or use an environment file:
 docker run -p 8080:8080 --env-file .env rustdok-server:latest
 ```
 
+### Using Kubernetes with Helm
+
+For Kubernetes deployments, we provide a comprehensive Helm chart with detailed configuration options. The chart's `values.yaml` file now includes thorough documentation for all parameters, making it easier to understand and configure the deployment.
+
+Key features of the Helm chart:
+- Detailed descriptions for all configuration parameters
+- Support for both generic S3 storage and Rook Ceph integration
+- Configurable resource limits and requests
+- Health check probes with customizable settings
+- Environment variable configuration
+
+For more information, see the [rustdok-helm-chart](https://github.com/stathis-ditc/rustdok-helm-chart).
+
 ## API Endpoints
 
 ### Health Checks
