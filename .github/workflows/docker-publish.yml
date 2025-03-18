@@ -57,6 +57,11 @@ jobs:
             type=ref,event=pr
             type=sha,format=short
             type=raw,value=latest,enable={{is_default_branch}}
+          annotations: |
+            org.opencontainers.image.title="RustDok Server"
+            org.opencontainers.image.description="Backend server for RustDok document management system"
+            org.opencontainers.image.vendor="Devs In The Cloud"
+            org.opencontainers.image.authors="Stathis Kapaniaris"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
@@ -67,5 +72,8 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          outputs: |
+            type=registry,oci-mediatypes=true
+          provenance: mode=max
           cache-from: type=gha
           cache-to: type=gha,mode=max 
